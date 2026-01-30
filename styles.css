@@ -1,0 +1,161 @@
+:root {
+  --bg: #0b0f1a;
+  --panel: #12182b;
+  --text: #e6e8ef;
+  --muted: #9aa3b2;
+  --accent: #4f7cff;
+  --explorer: #3fb984;
+  --analyst: #f2b84b;
+  --scholar: #d96cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: var(--panel);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.nav .btn {
+  padding: 8px 14px;
+  background: var(--accent);
+  color: white;
+  border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 60px;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 700px;
+}
+
+.hero-actions {
+  margin-top: 30px;
+}
+
+.hero button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Tiers */
+.tiers {
+  padding: 80px 60px;
+  background: var(--panel);
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tier {
+  padding: 25px;
+  border-radius: 12px;
+  background: #0f1426;
+  border-left: 6px solid;
+}
+
+.tier h3 {
+  margin-bottom: 10px;
+}
+
+.reward {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.explorer { border-color: var(--explorer); }
+.analyst { border-color: var(--analyst); }
+.scholar { border-color: var(--scholar); }
+
+.tier ul {
+  list-style: none;
+}
+
+.tier li {
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+/* Categories */
+.categories {
+  padding: 80px 60px;
+}
+
+.category {
+  background: var(--panel);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Quality */
+.quality {
+  padding: 80px 60px;
+  background: #0f1426;
+}
+
+.quality p {
+  color: var(--muted);
+  max-width: 700px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+}
